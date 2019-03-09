@@ -15,21 +15,5 @@
       "38": "images/icon-38.png"
     },
     "default_title": "__MSG_browserActionTitle__"
-  },
-  "content_scripts": [
-    {
-      "matches": [
-        "http://*/*",
-        "https://*/*"
-      ],
-      "css": [
-        "styles/contentscript.css"
-      ],
-      "js": [
-        "scripts/contentscript.js"
-      ],
-      "run_at": "document_end",
-      "all_frames": false
-    }
-  ]
+  }
 }
