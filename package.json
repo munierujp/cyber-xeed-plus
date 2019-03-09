@@ -23,6 +23,7 @@
     ]
   },
   "devDependencies": {
+    "@munierujp/val": "^1.0.0",
     "babel-cli": "6.x.x",
     "babel-core": "6.x.x",
     "babel-loader": "7.x.x",
