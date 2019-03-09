@@ -16,11 +16,6 @@
     },
     "default_title": "__MSG_browserActionTitle__"
   },
-  "options_page": "pages/options.html",
-  "options_ui": {
-    "page": "pages/options.html",
-    "chrome_style": true
-  },
   "content_scripts": [
     {
       "matches": [
