@@ -15,5 +15,16 @@
       "38": "images/icon-38.png"
     },
     "default_title": "__MSG_browserActionTitle__"
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.i-abs.co.jp/cyberx/*"
+      ],
+      "js": [
+        "scripts/contentsscript.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
 }
