@@ -19,12 +19,21 @@
   "content_scripts": [
     {
       "matches": [
-        "*://*.i-abs.co.jp/cyberx/*"
+        "*://cxg1.i-abs.co.jp/cyberx/*",
+        "*://cxg2.i-abs.co.jp/cyberx/*",
+        "*://cxg3.i-abs.co.jp/cyberx/*",
+        "*://cxg4.i-abs.co.jp/cyberx/*",
+        "*://cxg5.i-abs.co.jp/cyberx/*",
+        "*://cxg6.i-abs.co.jp/cyberx/*",
+        "*://cxg7.i-abs.co.jp/cyberx/*",
+        "*://cxg8.i-abs.co.jp/cyberx/*",
+        "*://cxg9.i-abs.co.jp/cyberx/*"
       ],
       "js": [
         "scripts/contentsscript.js"
       ],
-      "run_at": "document_end"
+      "run_at": "document_end",
+      "all_frames": true
     }
   ]
 }
