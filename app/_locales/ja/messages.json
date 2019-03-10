@@ -1,0 +1,18 @@
+{
+  "appName": {
+    "message": "CYBER XEED PLUS",
+    "description": "The name of the application"
+  },
+  "appShortName": {
+    "message": "CXBER XEED+",
+    "description": "The short_name (maximum of 12 characters recommended) is a short version of the app's name."
+  },
+  "appDescription": {
+    "message": "勤怠管理システムCYBER XEEDに便利な機能を追加します。",
+    "description": "The description of the application"
+  },
+  "browserActionTitle": {
+    "message": "CYBER XEED PLUS",
+    "description": "The title of the browser action button"
+  }
+}
