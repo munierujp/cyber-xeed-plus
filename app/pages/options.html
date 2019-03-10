@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>オプション</title>
+</head>
+
+<body>
+  <div id="app">
+    <div>
+      <label>
+        <input
+          type="checkbox"
+          v-model="ログイン画面で自動ログイン"
+          @input="onUpdate">
+        <span>ログイン画面で自動ログイン</span>
+      </label>
+    </div>
+    <div>
+      <label>
+        <input
+          type="checkbox"
+          v-model="勤務データ確認画面に今月ボタンを追加"
+          @input="onUpdate">
+        <span>勤務データ確認画面に今月ボタンを追加</span>
+      </label>
+    </div>
+    <div>
+      <label>
+        <input
+          type="checkbox"
+          v-model="就業週報月報画面に今月ボタンを追加"
+          @input="onUpdate">
+        <span>就業週報月報画面に今月ボタンを追加</span>
+      </label>
+    </div>
+    <div>
+      <label>
+        <input
+          type="checkbox"
+          v-model="就業週報画面に今月ボタンを追加"
+          @input="onUpdate">
+        <span>就業週報画面に今月ボタンを追加</span>
+      </label>
+    </div>
+    <div>
+      <label>
+        <input
+          type="checkbox"
+          v-model="就業月報画面に今月ボタンを追加"
+          @input="onUpdate">
+        <span>就業月報画面に今月ボタンを追加</span>
+      </label>
+    </div>
+    <div>
+      <label>
+        <input
+          type="checkbox"
+          v-model="就業年報画面に今年ボタンを追加"
+          @input="onUpdate">
+        <span>就業年報画面に今年ボタンを追加</span>
+      </label>
+    </div>
+    <div>
+      <button @click="save">保存</button>
+      <span
+        v-if="status"
+        v-text="status"></span>
+    </div>
+  </div>
+  <script src="../scripts/options.js"></script>
+</body>
+
+</html>

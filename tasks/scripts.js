@@ -33,6 +33,11 @@ gulp.task('scripts', (cb) => {
           test: /\.js$/,
           loader: 'babel-loader'
         }]
+      },
+      resolve: {
+        alias: {
+          'vue$': 'vue/dist/vue.esm.js'
+        }
       }
     },
     webpack,
