@@ -15,7 +15,10 @@
     "dev:firefox": "gulp --watch --vendor=firefox",
     "dev:opera": "gulp --watch --vendor=opera",
     "dev:edge": "gulp --watch --vendor=edge",
-    "lint": "standard"
+    "lint": "standard",
+    "release:major": "gulp release",
+    "release:minor": "gulp feature",
+    "release:patch": "gulp patch"
   },
   "standard": {
     "globals": [
