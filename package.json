@@ -63,6 +63,7 @@
     "stylelint-config-standard": "^18.2.0",
     "stylelint-scss": "^3.5.4",
     "vinyl-named": "1.x.x",
+    "vue": "^2.6.8",
     "webpack": "3.x.x",
     "webpack-stream": "3.x.x",
     "yargs": "^8.x.x"
