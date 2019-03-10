@@ -19,5 +19,11 @@ export default [
     actions: [
       actions.就業週報画面に今月ボタンを追加
     ]
+  },
+  {
+    path: paths.就業月報画面,
+    actions: [
+      actions.就業月報画面に今月ボタンを追加
+    ]
   }
 ]
