@@ -1,11 +1,17 @@
 import Val from '@munierujp/val'
+import fetchConfigOrDefault from './fetchConfigOrDefault'
 import routes from './routes'
 
 export default function () {
   const actions = getActions(window.location)
   actions.forEach(action => {
-    console.log(`アクション「${action.name}」を実行します。`)
-    action.exec()
+    const name = action.name
+    fetchConfigOrDefault(name).then(shouldExec => {
+      if (shouldExec) {
+        console.log(`アクション「${name}」を実行します。`)
+        action.exec()
+      }
+    })
   })
 }
 
