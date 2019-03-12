@@ -14,7 +14,7 @@ function getSearchButtonElement () {
 
 function createCurrentMonthButtonCellElement (searchButton) {
   const cell = document.createElement('td')
-  cell.setAttribute('valign', 'bottom')
+  cell.setAttribute('nowrap', true)
   const button = createCurrentMonthButtonElement(searchButton)
   cell.append(button)
   return cell
