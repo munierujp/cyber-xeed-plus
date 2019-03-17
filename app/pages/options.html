@@ -39,6 +39,15 @@
       <label>
         <input
           type="checkbox"
+          v-model="就業週報月報画面に合計を表示"
+          @input="onUpdate">
+        <span>就業週報月報画面に合計を表示</span>
+      </label>
+    </div>
+    <div>
+      <label>
+        <input
+          type="checkbox"
           v-model="就業週報画面に今月ボタンを追加"
           @input="onUpdate">
         <span>就業週報画面に今月ボタンを追加</span>
