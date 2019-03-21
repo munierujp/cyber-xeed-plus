@@ -8,31 +8,54 @@
 
 <body>
   <div id="app">
+    <h2>ログイン画面</h2>
     <div>
       <label>
         <input
           type="checkbox"
           v-model="ログイン画面で自動ログイン"
           @input="onUpdate">
-        <span>ログイン画面で自動ログイン</span>
+        <span>自動ログイン</span>
       </label>
     </div>
+    <h2>就業週報画面</h2>
+    <div>
+      <label>
+        <input
+          type="checkbox"
+          v-model="就業週報画面に今月ボタンを追加"
+          @input="onUpdate">
+        <span>今月ボタンを追加</span>
+      </label>
+    </div>
+    <h2>勤務データ確認画面</h2>
     <div>
       <label>
         <input
           type="checkbox"
           v-model="勤務データ確認画面に今月ボタンを追加"
           @input="onUpdate">
-        <span>勤務データ確認画面に今月ボタンを追加</span>
+        <span>今月ボタンを追加</span>
       </label>
     </div>
+    <h2>就業月報画面</h2>
+    <div>
+      <label>
+        <input
+          type="checkbox"
+          v-model="就業月報画面に今月ボタンを追加"
+          @input="onUpdate">
+        <span>今月ボタンを追加</span>
+      </label>
+    </div>
+    <h2>就業週報月報画面</h2>
     <div>
       <label>
         <input
           type="checkbox"
           v-model="就業週報月報画面に今月ボタンを追加"
           @input="onUpdate">
-        <span>就業週報月報画面に今月ボタンを追加</span>
+        <span>今月ボタンを追加</span>
       </label>
     </div>
     <div>
@@ -41,34 +64,17 @@
           type="checkbox"
           v-model="就業週報月報画面に合計を表示"
           @input="onUpdate">
-        <span>就業週報月報画面に合計を表示</span>
+        <span>合計を表示</span>
       </label>
     </div>
-    <div>
-      <label>
-        <input
-          type="checkbox"
-          v-model="就業週報画面に今月ボタンを追加"
-          @input="onUpdate">
-        <span>就業週報画面に今月ボタンを追加</span>
-      </label>
-    </div>
-    <div>
-      <label>
-        <input
-          type="checkbox"
-          v-model="就業月報画面に今月ボタンを追加"
-          @input="onUpdate">
-        <span>就業月報画面に今月ボタンを追加</span>
-      </label>
-    </div>
+    <h2>就業年報画面</h2>
     <div>
       <label>
         <input
           type="checkbox"
           v-model="就業年報画面に今年ボタンを追加"
           @input="onUpdate">
-        <span>就業年報画面に今年ボタンを追加</span>
+        <span>今年ボタンを追加</span>
       </label>
     </div>
     <div>
