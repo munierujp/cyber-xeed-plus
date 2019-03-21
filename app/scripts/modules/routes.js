@@ -17,7 +17,8 @@ export default [
   {
     path: paths.就業週報月報画面,
     actions: [
-      actions.就業週報月報画面に今月ボタンを追加
+      actions.就業週報月報画面に今月ボタンを追加,
+      actions.就業週報月報画面に合計を表示
     ]
   },
   {
