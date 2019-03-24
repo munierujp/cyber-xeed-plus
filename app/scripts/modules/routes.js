@@ -9,6 +9,12 @@ export default [
     ]
   },
   {
+    path: paths.ホーム画面,
+    actions: [
+      actions.ホーム画面から別の画面に自動リダイレクト
+    ]
+  },
+  {
     path: paths.勤務データ確認画面,
     actions: [
       actions.勤務データ確認画面に今月ボタンを追加

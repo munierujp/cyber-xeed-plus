@@ -6,4 +6,8 @@ export default class {
   static set (items) {
     chrome.storage.sync.set(items)
   }
+
+  static update (items) {
+    return new Promise(resolve => chrome.storage.sync.set(items, () => resolve()))
+  }
 }

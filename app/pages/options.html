@@ -18,6 +18,22 @@
         <span>自動ログイン</span>
       </label>
     </div>
+    <h2>ホーム画面</h2>
+    <div>
+      <label>
+        <input
+          type="checkbox"
+          v-model="ホーム画面から別の画面に自動リダイレクト"
+          @input="onUpdate">
+        <span>次の画面に自動リダイレクト：</span>
+      </label>
+      <label>
+        <input
+          type="text"
+          v-model="ホーム画面から自動リダイレクトする先の画面名"
+          @input="onUpdate">
+      </label>
+    </div>
     <h2>就業週報画面</h2>
     <div>
       <label>
