@@ -39,8 +39,9 @@ document.addEventListener('DOMContentLoaded', () => {
           this.status = ''
         },
         save () {
-          Storage.set(this.config)
-          this.status = '保存しました。'
+          Storage.update(this.config).then(() => {
+            this.status = '保存しました。'
+          })
         }
       }
     })
