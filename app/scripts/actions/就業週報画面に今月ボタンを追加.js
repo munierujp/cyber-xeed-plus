@@ -1,5 +1,5 @@
-import getStartOfMonth from '../modules/getStartOfMonth'
-import getEndOfMonth from '../modules/getEndOfMonth'
+import getStartOfMonth from '../modules/luxon/getStartOfMonth'
+import getEndOfMonth from '../modules/luxon/getEndOfMonth'
 
 export default function () {
   const searchButton = getSearchButtonElement()
