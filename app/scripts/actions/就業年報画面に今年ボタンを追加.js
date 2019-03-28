@@ -1,4 +1,4 @@
-import getStartOfYear from '../modules/getStartOfYear'
+import getStartOfYear from '../modules/luxon/getStartOfYear'
 import getNow from '../modules/luxon/getNow'
 
 export default function () {
