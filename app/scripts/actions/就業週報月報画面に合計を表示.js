@@ -1,3 +1,6 @@
+import newDuration from '../modules/luxon/newDuration'
+import formatDuration from '../modules/luxon/formatDuration'
+
 const TARGET_COL_NAMES = ['所定内計', '時間外計', '休日代計', '休日出計', '過不足', '遅早外計', '休暇権利']
 
 export default function () {
@@ -30,8 +33,7 @@ function createTotalRowElement (table) {
       return createCellElement('合計', 'left')
     } else if (TARGET_COL_NAMES.includes(colName)) {
       const values = getCellValues(table, i)
-      const mins = calcMins(values, i)
-      const value = stringifyMins(mins)
+      const value = createCellValue(values)
       return createCellElement(value, 'right')
     } else {
       return createCellElement(' ', 'left')
@@ -57,11 +59,12 @@ function getCellValues (table, i) {
     .map(cell => cell.textContent)
 }
 
-function calcMins (values, i) {
-  const minss = values
+function createCellValue (values) {
+  const duration = values
     .filter(isTimeString)
     .map(parseTimeString)
-  return minss.length ? minss.reduce((a, b) => a + b) : 0
+    .reduce((a, b) => a.plus(b), newDuration(0))
+  return formatDuration(duration, 'h:mm')
 }
 
 function isTimeString (value) {
@@ -71,14 +74,7 @@ function isTimeString (value) {
 function parseTimeString (value) {
   const values = value.split(':')
   const negative = value.startsWith('-')
-  const hour = negative ? Number(values[0]) * -1 : Number(values[0])
-  const min = Number(values[1])
-  const mins = hour * 60 + min
-  return negative ? mins * -1 : mins
-}
-
-function stringifyMins (minutes) {
-  const hour = Math.floor(minutes / 60)
-  const min = minutes % 60 === 0 ? '00' : minutes % 60
-  return `${hour}:${min}`
+  const hours = Number(values[0])
+  const minutes = negative ? Number(values[1]) * -1 : Number(values[1])
+  return newDuration({ hours, minutes })
 }
