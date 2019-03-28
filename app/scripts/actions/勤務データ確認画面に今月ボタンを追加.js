@@ -1,5 +1,5 @@
 import getStartOfMonth from '../modules/getStartOfMonth'
-import getNow from '../modules/getNow'
+import getNow from '../modules/luxon/getNow'
 
 export default function () {
   const searchButton = getSearchButtonElement()
