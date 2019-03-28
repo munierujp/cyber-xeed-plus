@@ -1,4 +1,4 @@
-import getStartOfMonth from '../modules/getStartOfMonth'
+import getStartOfMonth from '../modules/luxon/getStartOfMonth'
 import getEndOfMonth from '../modules/getEndOfMonth'
 
 export default function () {
