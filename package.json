@@ -60,6 +60,7 @@
     "gulp-util": "3.x.x",
     "gulp-zip": "^4.x.x",
     "luxon": "^1.11.4",
+    "mocha": "^6.0.2",
     "require-dir": "0.x.x",
     "standard": "^10.0.2",
     "stylelint": "^9.10.1",
