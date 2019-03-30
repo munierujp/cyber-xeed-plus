@@ -68,7 +68,7 @@ function createCellValue (values) {
 }
 
 function isTimeString (value) {
-  return value.match(/-?\d+:\d+/)
+  return value.match(/^-?\d+:\d+$/)
 }
 
 function parseTimeString (value) {
