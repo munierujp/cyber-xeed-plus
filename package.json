@@ -16,6 +16,7 @@
     "dev:opera": "gulp --watch --vendor=opera",
     "dev:edge": "gulp --watch --vendor=edge",
     "lint": "standard",
+    "test": "mocha-webpack --require intelli-espower-loader test/**/*-test.js",
     "release:major": "gulp release",
     "release:minor": "gulp feature",
     "release:patch": "gulp patch"
