@@ -1,8 +1,6 @@
 import newDuration from '../modules/luxon/newDuration'
 import formatDuration from '../modules/luxon/formatDuration'
 
-const TARGET_COL_NAMES = ['所定内計', '時間外計', '休日代計', '休日出計', '過不足', '遅早外計', '休暇権利']
-
 export default function () {
   const table = findTableElement()
   if (table) {
@@ -20,24 +18,28 @@ function findTableElement () {
 }
 
 function getColNames (table) {
-  const headerCells = Array.from(table.querySelectorAll('.ap_tr_title td'))
+  const headerCells = getHeaderCells(table)
   return headerCells.map(cell => cell.textContent)
+}
+
+function getHeaderCells (table) {
+  return Array.from(table.querySelectorAll('.ap_tr_title td'))
 }
 
 function createTotalRowElement (table) {
   const row = document.createElement('tr')
   row.classList.add('ap_tr_base')
-  const colNames = getColNames(table)
-  const cells = colNames.map((colName, i) => {
+  const headerCells = getHeaderCells(table)
+  const cells = headerCells.map((headerCell, i) => {
     if (i === 0) {
       return createCellElement('合計', 'left')
-    } else if (TARGET_COL_NAMES.includes(colName)) {
-      const values = getCellValues(table, i)
+    }
+    const values = getCellValues(table, i)
+    if (values.some(isTimeString)) {
       const value = createCellValue(values)
       return createCellElement(value, 'right')
-    } else {
-      return createCellElement(' ', 'left')
     }
+    return createCellElement(' ', 'left')
   })
   cells.forEach(cell => row.append(cell))
   return row
