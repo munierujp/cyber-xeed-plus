@@ -8,9 +8,9 @@
 勤怠管理システムCYBER XEEDに便利な機能を追加するChrome拡張
 
 ## インストール方法
-* [CYBER XEED PLUS](https://chrome.google.com/webstore/detail/cyber-xeed-plus/fjcippambnmompkjifmbabafjemcccda)
+[![https://developer.chrome.com/webstore/images/ChromeWebStore_BadgeWBorder_v2_206x58.png](https://developer.chrome.com/webstore/images/ChromeWebStore_BadgeWBorder_v2_206x58.png)](https://chrome.google.com/webstore/detail/cyber-xeed-plus/fjcippambnmompkjifmbabafjemcccda)
 
-上記リンクからChromeウェブストアを開き、インストールしてください。
+上記のバナーからChromeウェブストアを開き、インストールしてください。
 
 ## 機能
 以下の機能があります。
