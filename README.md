@@ -1,5 +1,5 @@
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/v/fjcippambnmompkjifmbabafjemcccda.svg)](https://chrome.google.com/webstore/detail/cyber-xeed-plus/fjcippambnmompkjifmbabafjemcccda)
-[![Chrome Web Store](https://img.shields.io/chrome-web-store/users/fjcippambnmompkjifmbabafjemcccda.svg)](hhttps://chrome.google.com/webstore/detail/cyber-xeed-plus/fjcippambnmompkjifmbabafjemcccda)
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/users/fjcippambnmompkjifmbabafjemcccda.svg)](https://chrome.google.com/webstore/detail/cyber-xeed-plus/fjcippambnmompkjifmbabafjemcccda)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 # CYBER XEED PLUS
